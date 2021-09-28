@@ -164,9 +164,10 @@ input::placeholder {
     color: white;
     position: relative;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 34.5px;
     font-family: "Farnham Display";
-    letter-spacing: .001em;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
     line-height: 1.25em;
     margin-bottom: -8px;
     text-decoration: none;
