@@ -1,0 +1,328 @@
+/**Font Imports**/
+
+@font-face {
+    font-family: "Farnham-Display";
+    src: url(/Fonts/Light.otf);
+}
+
+@font-face {
+    font-family: "Farnham Bold";
+    src: url(/Fonts/FarnhamText-Bold\ Regular.otf);
+}
+
+@font-face {
+    font-family: "Mercury G1";
+    src: url(/Fonts/Mercury\ Text\ G1\ SC\ Roman.otf);
+}
+
+@font-face {
+    font-family: "Calluna Regular";
+    src: url(/Fonts/Calluna-Regular.otf)
+}
+
+@font-face {
+    font-family: "Calluna Bold";
+    src: url(/Fonts/Calluna\ Bold.otf)
+}
+
+
+/**End of Font Imports**/
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#navmenutext,
+#navsearchtext {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#navicons,
+#pseudoleft {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 4;
+}
+
+#navicons {
+    margin-left: 20px;
+}
+
+.fas {
+    text-indent: 5px;
+}
+
+#centerlogo {
+    align-self: center;
+    margin-left: -20px;
+}
+
+#navlogo {
+    color: darkblue;
+    margin: auto;
+    max-width: 225pt;
+}
+
+#menu {
+    height: 45px;
+    background-color: white;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Farnham-Display;
+    z-index: 2;
+    border-top: 1px solid lightgray;
+    display: none;
+}
+
+.menu-item {
+    padding: 0px 30px;
+    font-size: 14px;
+    font-family: "Calluna Bold";
+    font-weight: bold;
+}
+
+#search-bar {
+    position: fixed;
+    height: 37px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+#search {
+    width: 94.5%;
+}
+
+input[type=search] {
+    height: 70%;
+    width: 100%;
+}
+
+#search-bar-icon {
+    text-align: center;
+    width: 5.5%;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#bannerbg {
+    background: -webkit-linear-gradient( rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)100%), url("/Images/Banner\ Background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: initial;
+    height: 500px;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+
+#banner {
+    width: 80%;
+    position: relative;
+    padding: 0;
+    align-self: flex-end;
+    margin-bottom: 83px;
+}
+
+#bannertitle {
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "Farnham Display";
+    letter-spacing: .001em;
+    line-height: 1.25em;
+    margin-bottom: -8px;
+    text-decoration: none;
+}
+
+#bannerauthor {
+    color: white;
+    font-family: 'Mercury G1';
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+#blurbs {
+    background-color: white;
+    width: 80%;
+    transform: translateY(-63px);
+    margin: 0px auto 25px auto;
+}
+
+#other-blurb {
+    padding: 20px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blurb-box {
+    width: 33.3333333333%;
+}
+
+.blurb {
+    padding: 7px 7px 15px 7px;
+    margin: 7px;
+}
+
+.blurb-labels-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-bottom: 0.05pt solid lightgray;
+}
+
+.blurb-category {
+    font-family: 'Calluna Bold';
+    align-self: center;
+    font-size: 16.7px;
+    font-weight: bold;
+}
+
+.blurb-viewall {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    align-self: center;
+}
+
+.blurb-titles {
+    font-family: 'Farnham Bold';
+    font-size: 15.5px;
+    margin: 10px 5px 0px 5px;
+    line-height: 22px;
+}
+
+.blurb-titles:active,
+#banner-author:active {
+    text-decoration: underline;
+}
+
+.blurb-authors {
+    font-size: 12px;
+    font-family: 'Mercury G1';
+    margin: 12px 5px 0px 5px;
+}
+
+.blurb-thumbnails {
+    background-image: url(/Images/thumbnail3.png);
+    background-size: cover;
+    background-color: lightgrey;
+    width: 100%;
+    padding-bottom: 66%;
+}
+
+#news-thumbnail {
+    background-image: url(/Images/News.png);
+}
+
+#opinion-thumbnail {
+    background-image: url(/Images/Opinion.png);
+}
+
+#sports-thumbnail {
+    background-image: url(/Images/Sports.png);
+}
+
+#beyondloyola-thumbnail {
+    background-image: url(/Images/Beyond\ Loyola.png);
+}
+
+#inquiry-thumbnail {
+    background-image: url(/Images/Inquiry.png);
+}
+
+#features-thumbnail {
+    background-image: url(/Images/Features.png);
+}
+
+#news {
+    color: #1f427d
+}
+
+#opinion {
+    color: #010f42;
+}
+
+#sports {
+    color: #1f427d;
+}
+
+#beyond-loyola {
+    color: #cfb64b;
+}
+
+#inquiry {
+    color: #7f231f;
+}
+
+#features {
+    color: #39935f;
+}
+
+#footer {
+    text-align: center;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.15);
+    font-family: 'Mercury G1';
+    font-size: 14px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+[type=button]:hover,
+a:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+
+/** Responsive **/
+
+@media screen and (max-width: 767px) {
+    .blurb-box {
+        width: 100%;
+    }
+}
